@@ -1,7 +1,6 @@
 import os
 from datetime import timedelta
 from pathlib import Path
-
 from django.conf.global_settings import DATETIME_INPUT_FORMATS
 
 
