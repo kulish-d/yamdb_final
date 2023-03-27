@@ -1,0 +1,13 @@
+requests==2.26.0
+Django==3.2.16
+djangorestframework==3.12.4
+django-import-export==3.0.0b4
+djangorestframework-simplejwt==4.7.2
+PyJWT==2.2.0
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-pythonpath==0.7.4
+sqlparse==0.3.1
+django-filter==22.1
+gunicorn==20.0.4
+psycopg2-binary==2.9.5
