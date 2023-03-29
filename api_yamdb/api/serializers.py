@@ -1,9 +1,8 @@
 import datetime
 
-from reviews.models import (Category, Comment, Genre, Review, Title,
-                            User)
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from rest_framework import serializers
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 
 class CategorySerializer(serializers.ModelSerializer):
