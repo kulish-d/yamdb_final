@@ -1,3 +1,13 @@
+from api_yamdb.api.filters import TitleFilter
+from api_yamdb.api.permissions import (IsAdmin, IsAdminOrReadOnly,
+                                       IsAuthorOrHigherOrReadOnly)
+from api_yamdb.api.serializers import (CategorySerializer, CommentSerializer,
+                                       EditSelfProfileSerializer,
+                                       GenreSerializer, RegistrationSerializer,
+                                       ReviewSerializer, TitleSerializer,
+                                       TitleShowSerializer, TokenSerializer,
+                                       UserSerializer)
+from api_yamdb.reviews.models import Category, Genre, Review, Title, User
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.db.models import Avg
@@ -10,17 +20,6 @@ from rest_framework.permissions import (AllowAny, IsAuthenticated,
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from rest_framework_simplejwt.tokens import AccessToken
-
-from api_yamdb.api.filters import TitleFilter
-from api_yamdb.api.permissions import (IsAdmin, IsAdminOrReadOnly,
-                                       IsAuthorOrHigherOrReadOnly)
-from api_yamdb.api.serializers import (CategorySerializer, CommentSerializer,
-                                       EditSelfProfileSerializer,
-                                       GenreSerializer, RegistrationSerializer,
-                                       ReviewSerializer, TitleSerializer,
-                                       TitleShowSerializer, TokenSerializer,
-                                       UserSerializer)
-from api_yamdb.reviews.models import Category, Genre, Review, Title, User
 
 
 class CategoriesViewSet(
