@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 
-from api_yamdb.reviews.models import Category, Genre, Review, Title, User
+from ..reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitleFilter
 from .permissions import IsAdmin, IsAdminOrReadOnly, IsAuthorOrHigherOrReadOnly
