@@ -1,10 +1,10 @@
+import datetime
+
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from rest_framework import serializers
 
-import datetime
-
-from api_yamdb.reviews.models import (Category, Genre, Title,
-                                      Review, Comment, User)
+from api_yamdb.reviews.models import (Category, Comment, Genre, Review, Title,
+                                      User)
 
 
 class CategorySerializer(serializers.ModelSerializer):
