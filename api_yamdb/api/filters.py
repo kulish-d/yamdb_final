@@ -1,5 +1,4 @@
 import django_filters
-
 from api_yamdb.reviews.models import Title
 
 
