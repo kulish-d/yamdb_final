@@ -1,6 +1,6 @@
 import datetime
 
-from api_yamdb.reviews.models import (Category, Comment, Genre, Review, Title,
+from reviews.models import (Category, Comment, Genre, Review, Title,
                                       User)
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from rest_framework import serializers
